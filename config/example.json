@@ -1,0 +1,59 @@
+{
+    "database": {
+        "active": "MongoDB",
+        "provider": {
+            "MongoDB": {
+                "uri": "mongodb://localhost/mail",
+                "server": {
+                    "ssl": false,
+                    "sslValidate": true,
+                    "sslCA": null,
+                    "sslCert": null,
+                    "sslKey": null,
+                    "sslPass": null
+                }
+            }
+        }
+    },
+    "queue": {
+        "active": "AMQP",
+        "provider": {
+            "AMQP": {
+                "name": "mail",
+                "host": "localhost",
+                "port": 5672,
+                "login": "guest",
+                "password": "guest",
+                "authMechanism": "AMQPLAIN",
+                "vhost": "/",
+                "ssl": {
+                    "enabled": false,
+                    "keyFile": null,
+                    "certFile": null,
+                    "caFile": null,
+                    "rejectUnauthorized": true
+                }
+            }
+        }
+    },
+    "mail": {
+        "active": "Mandrill",
+        "provider": {
+            "AmazonSES": {
+                "apiKey": ""
+            },
+            "ElasticEmail": {
+                "apiKey": ""
+            },
+            "Mailgun": {
+                "apiKey": ""
+            },
+            "Mailjet": {
+                "apiKey": ""
+            },
+            "Mandrill": {
+                "apiKey": ""
+            }
+        }
+    }
+}

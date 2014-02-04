@@ -1,0 +1,38 @@
+database:
+  active: "MongoDB"
+  provider:
+    MongoDB:
+      host: "localhost"
+      port: 27017
+      login: "guest"
+      password: "guest"
+queue:
+  active: "AMQP"
+  provider:
+    AMQP:
+      name: "mail"
+      host: "localhost"
+      port: 5672
+      login: "guest"
+      password: "guest"
+      authMechanism: "AMQPLAIN"
+      vhost: "/"
+      ssl:
+        enabled: false
+        keyFile: null
+        certFile: null
+        caFile: null
+        rejectUnauthorized: true
+mail:
+  active: "Mandrill"
+  provider:
+    AmazonSES:
+      apiKey: ""
+    ElasticEmail:
+      apiKey: ""
+    Mailgun:
+      apiKey: ""
+    Mailjet:
+      apiKey: ""
+    Mandrill:
+      apiKey: ""

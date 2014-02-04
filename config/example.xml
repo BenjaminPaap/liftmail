@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<root>
+    <database>
+        <active>MongoDB</active>
+        <provider>
+            <MongoDB>
+                <host>localhost</host>
+                <port>27017</port>
+                <login>guest</login>
+                <password>guest</password>
+            </MongoDB>
+        </provider>
+    </database>
+    <queue>
+        <active>AMQP</active>
+        <provider>
+            <AMQP>
+                <name>mail</name>
+                <host>localhost</host>
+                <port>5672</port>
+                <login>guest</login>
+                <password>guest</password>
+                <authMechanism>AMQPLAIN</authMechanism>
+                <vhost>/</vhost>
+                <ssl>
+                    <enabled>false</enabled>
+                    <keyFile />
+                    <certFile />
+                    <caFile />
+                    <rejectUnauthorized>true</rejectUnauthorized>
+                </ssl>
+            </AMQP>
+        </provider>
+    </queue>
+    <mail>
+        <active>Mandrill</active>
+        <provider>
+            <AmazonSES>
+                <apiKey></apiKey>
+            </AmazonSES>
+            <ElasticEmail>
+                <apiKey></apiKey>
+            </ElasticEmail>
+            <Mailgun>
+                <apiKey></apiKey>
+            </Mailgun>
+            <Mailjet>
+                <apiKey></apiKey>
+            </Mailjet>
+            <Mandrill>
+                <apiKey></apiKey>
+            </Mandrill>
+        </provider>
+    </mail>
+</root>

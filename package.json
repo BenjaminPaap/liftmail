@@ -1,0 +1,17 @@
+{
+  "name": "liftmail",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/node/Liftmail.js",
+  "scripts": {},
+  "author": "Florian Körner",
+  "license": "MIT",
+  "dependencies": {
+      "amqp": "*",
+      "commander": "*",
+      "js-yaml": "*",
+      "mongodb": "*",
+      "node-xml-lite": "*",
+      "thunky": "*"
+  }
+}

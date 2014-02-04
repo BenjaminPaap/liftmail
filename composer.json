@@ -1,0 +1,26 @@
+{
+    "name": "idearockers/liftmail",
+    "type": "library",
+    "version": "0.0.0",
+    "description": "MailQueue management with Node and/or PHP. Support for AmazonSES, Mandrill, Mailjet and more.",
+    "keywords": ["email", "api"],
+    "homepage": "https://github.com/idearockers/liftmail",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Florian Körner",
+            "email": "florian@idearockers.com",
+            "homepage": "http://idearockers.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/yaml": "v2.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Idearockers\\Liftmail\\": "lib/php/"
+        }
+    }
+}
